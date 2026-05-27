@@ -77,6 +77,8 @@ def to_snbt(obj):
         return "1b" if obj else "0b"
     if isinstance(obj, int):
         return str(obj)
+    if isinstance(obj, str) and re.match(r'^#[0-9A-Fa-f]{6}$', obj):
+        return str(int(obj[1:], 16))
     if isinstance(obj, float):
         # Format with at least one decimal and 'f' suffix
         s = f"{obj:.10f}".rstrip('0').rstrip('.')
