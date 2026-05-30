@@ -18,6 +18,7 @@ REGISTRY: dict[str, dict] = {
     "chicken_sound_variant": {},
     "cow_variant": {},
     "cow_sound_variant": {},
+    "clock_time_marker": {},
     "damage_type": {},
     "dimension_type": {},
     "enchantment": {},
@@ -37,7 +38,7 @@ REGISTRY: dict[str, dict] = {
     "painting_variant": {},
     "pig_variant": {},
     "pig_sound_variant": {},
-    "world_clock": {},
+    "world_clock": {}, 
     "zombie_nautilus_variant": {},
 }
 
